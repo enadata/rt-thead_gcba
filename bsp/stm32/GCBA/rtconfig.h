@@ -142,6 +142,7 @@
 
 
 /* system packages */
+#define PKG_USING_HELLO
 
 
 /* peripheral libraries and drivers */
