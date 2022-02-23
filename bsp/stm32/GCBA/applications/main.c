@@ -14,14 +14,14 @@
 #include <hello.h>
 
 /* defined the LED4 pin: PC2 */
-#define LED0_PIN    GET_PIN(C, 2)
+#define LED0_PIN    GET_PIN(A, 11)
 
 int main(void)
 {
     int count = 1;
-    hello_func();
+    // rt_kprintf("-----------------\n");
+    // hello_func();
     /* set LED0 pin mode to output */
-    rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
 
     while (count++)
     {

@@ -19,6 +19,7 @@
 
 #include <rthw.h>
 #include <rtthread.h>
+#include <board.h>
 
 #ifdef RT_USING_USER_MAIN
 #ifndef RT_MAIN_THREAD_STACK_SIZE
@@ -185,6 +186,7 @@ void main_thread_entry(void *parameter)
     rt_components_init();
 #endif /* RT_USING_COMPONENTS_INIT */
 
+    rt_pin_write(LED0_PIN, PIN_HIGH);
 #ifdef RT_USING_SMP
     rt_hw_secondary_cpu_up();
 #endif /* RT_USING_SMP */
@@ -241,6 +243,10 @@ int rtthread_startup(void)
 
     /* show RT-Thread version */
     rt_show_version();
+    rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
+    rt_pin_write(LED0_PIN, PIN_LOW);
+    
+
 
     /* timer system initialization */
     rt_system_timer_init();
@@ -254,7 +260,6 @@ int rtthread_startup(void)
 #endif /* RT_USING_SIGNALS */
 
     /* create init_thread */
-    rt_application_init();
 
     /* timer thread initialization */
     rt_system_timer_thread_init();
@@ -265,6 +270,7 @@ int rtthread_startup(void)
 #ifdef RT_USING_SMP
     rt_hw_spin_lock(&_cpus_lock);
 #endif /* RT_USING_SMP */
+    rt_application_init();
 
     /* start scheduler */
     rt_system_scheduler_start();

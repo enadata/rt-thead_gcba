@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "spi_flash.h": "c"
+        "spi_flash.h": "c",
+        "functional": "c",
+        "board.h": "c"
     }
 }
