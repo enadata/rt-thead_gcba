@@ -1,0 +1,5 @@
+./bsp/stm32/GCBA/.sconsign.dblite
+./bsp/stm32/GCBA/rt-thread.map
+*.pyc
+*.bin
+*.o
