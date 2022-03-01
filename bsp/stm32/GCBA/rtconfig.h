@@ -31,6 +31,8 @@
 
 #define RT_USING_MEMPOOL
 #define RT_USING_SMALL_MEM
+#define RT_USING_MEMHEAP
+#define RT_USING_MEMHEAP_AS_HEAP
 #define RT_USING_HEAP
 
 /* Kernel Device Object */
@@ -142,13 +144,13 @@
 
 
 /* system packages */
-#define PKG_USING_HELLO
 
 
 /* peripheral libraries and drivers */
 
 
 /* miscellaneous packages */
+#define PKG_USING_HELLO
 
 
 /* samples: kernel and components samples */

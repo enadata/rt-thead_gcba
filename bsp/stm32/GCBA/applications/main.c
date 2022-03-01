@@ -19,9 +19,10 @@
 int main(void)
 {
     int count = 1;
-    // rt_kprintf("-----------------\n");
-    // hello_func();
     /* set LED0 pin mode to output */
+    rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
+    rt_pin_write(LED0_PIN, PIN_LOW);
+    hello_func();
 
     while (count++)
     {
