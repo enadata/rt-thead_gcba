@@ -12,6 +12,7 @@
 #include <rtdevice.h>
 #include <board.h>
 #include <hello.h>
+#include <fal_cfg.h>
 
 /* defined the LED4 pin: PC2 */
 #define LED0_PIN    GET_PIN(A, 11)
@@ -23,6 +24,7 @@ int main(void)
     rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
     rt_pin_write(LED0_PIN, PIN_LOW);
     hello_func();
+    fal_init();
 
     while (count++)
     {

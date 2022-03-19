@@ -39,6 +39,7 @@ extern const struct fal_flash_dev stm32_onchip_flash_128k;
     {FAL_PART_MAGIC_WROD, "app", "onchip_flash_128k",  0 , 256*1024 , 0}, \
     {FAL_PART_MAGIC_WROD, "download","onchip_flash_128k", 256*1024 ,256*1024, 0}, \
     {FAL_PART_MAGIC_WROD, "factory","onchip_flash_128k", 512*1024,256*1024, 0}, \
+    {FAL_PART_MAGIC_WROD, "paramerets","onchip_flash_128k", 768*1024,128*1024, 0}, \
 }
 
 
