@@ -4,5 +4,6 @@ rt-thread 4.0  test for GCBA
 ## TODO
 - [X] hello package
 - [X] fal package
-- [ ] ota_downloader package
+- [X] ota_downloader package
+- [ ] bootloader bug(跳转到app后不启动)
 - [ ] thread pool package

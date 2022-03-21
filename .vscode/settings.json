@@ -2,6 +2,11 @@
     "files.associations": {
         "spi_flash.h": "c",
         "functional": "c",
-        "board.h": "c"
+        "board.h": "c",
+        "ymodem.h": "c",
+        "system_error": "cpp",
+        "stm32f4xx.h": "c",
+        "stm32f407xx.h": "c",
+        "rtthread.h": "c"
     }
 }
