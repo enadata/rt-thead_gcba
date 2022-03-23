@@ -14,6 +14,8 @@
 #include <rtthread.h>
 #include <board.h>
 
+#define RT_APP_PART_ADDR            (0x08000000 + 128*1024)//app partition begin address
+
 #define FLASH_SIZE_GRANULARITY_16K   (4 * 16 * 1024)
 #define FLASH_SIZE_GRANULARITY_64K   (64 * 1024)
 #define FLASH_SIZE_GRANULARITY_128K  (7 * 128 * 1024)
