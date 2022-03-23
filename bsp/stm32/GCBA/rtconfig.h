@@ -3,7 +3,7 @@
 
 /* Automatically generated file; DO NOT EDIT. */
 /* RT-Thread Configuration */
-
+#define USER_VECT_TAB_ADDRESS
 /* RT-Thread Kernel */
 
 #define RT_NAME_MAX 8
