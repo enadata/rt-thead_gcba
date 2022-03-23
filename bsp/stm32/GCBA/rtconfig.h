@@ -146,9 +146,8 @@
 #define PKG_FAL_VER_NUM 0x00500
 
 /* tools packages */
-#define PKG_USING_YMODEM_OTA
-#define PKG_USING_OTA_DOWNLOADER
-#define RT_USING_RYM
+
+
 /* system packages */
 
 
