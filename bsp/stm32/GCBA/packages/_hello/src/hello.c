@@ -8,7 +8,7 @@ int hello_func(void)
 
 int hello_init(void)
 {
-    rt_kprintf("hello package initialized.\n");
+    // rt_kprintf("hello package initialized.\n");
 
     return 0;
 }

@@ -76,7 +76,7 @@ static int rti_end(void)
 {
     return 0;
 }
-INIT_EXPORT(rti_end, "6.end");
+INIT_EXPORT(rti_end, "7.end");
 
 /**
  * @brief  Onboard components initialization. In this function, the board-level
@@ -185,7 +185,7 @@ void main_thread_entry(void *parameter)
     /* RT-Thread components initialization */
     rt_components_init();
 #endif /* RT_USING_COMPONENTS_INIT */
-
+    rt_kprintf("components init ok\n");
 #ifdef RT_USING_SMP
     rt_hw_secondary_cpu_up();
 #endif /* RT_USING_SMP */

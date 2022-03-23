@@ -266,6 +266,8 @@ typedef int (*init_fn_t)(void);
 /* appliation initialization (rtgui application etc ...) */
 #define INIT_APP_EXPORT(fn)             INIT_EXPORT(fn, "6")
 
+#define INIT_PKG_EXPORT(fn)             INIT_EXPORT(fn, "7")
+
 #if !defined(RT_USING_FINSH)
 /* define these to empty, even if not include finsh.h file */
 #define FINSH_FUNCTION_EXPORT(name, desc)

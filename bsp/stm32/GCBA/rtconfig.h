@@ -10,7 +10,7 @@
 #define RT_ALIGN_SIZE 4
 #define RT_THREAD_PRIORITY_32
 #define RT_THREAD_PRIORITY_MAX 32
-#define RT_TICK_PER_SECOND 100
+#define RT_TICK_PER_SECOND 1000
 #define RT_USING_OVERFLOW_CHECK
 #define RT_USING_HOOK
 #define RT_USING_IDLE_HOOK
@@ -39,9 +39,9 @@
 
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
-#define RT_CONSOLEBUF_SIZE 128
+#define RT_CONSOLEBUF_SIZE 256
 #define RT_CONSOLE_DEVICE_NAME "uart1"
-#define RT_VER_NUM 0x40000
+#define RT_VER_NUM 0x40002
 #define ARCH_ARM
 #define ARCH_ARM_CORTEX_M
 #define ARCH_ARM_CORTEX_M4
@@ -139,18 +139,21 @@
 
 
 /* multimedia packages */
-#define PKG_USING_FAL
-#define FAL_DEBUG_CONFIG
-#define FAL_DEBUG 1
-#define FAL_PART_HAS_TABLE_CFG
-#define PKG_USING_FAL_V00500
-#define PKG_FAL_VER_NUM 0x00500
 
 /* tools packages */
 #define PKG_USING_YMODEM_OTA
 #define PKG_USING_OTA_DOWNLOADER
 #define RT_USING_RYM
 /* system packages */
+#define PKG_USING_FAL
+#define FAL_DEBUG_CONFIG
+#define FAL_DEBUG 0
+#define FAL_PART_HAS_TABLE_CFG
+// #define PKG_USING_FAL_V10000
+// #define PKG_FAL_VER_NUM 0x10000
+#define PKG_USING_FAL_V00500
+#define PKG_FAL_VER_NUM 0x00500
+
 #define PKG_USING_QBOOT
 #define QBOOT_APP_PART_NAME "app"
 #define QBOOT_DOWNLOAD_PART_NAME "download"
