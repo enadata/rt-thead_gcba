@@ -82,6 +82,7 @@
 #define RT_USING_SERIAL
 #define RT_SERIAL_USING_DMA
 #define RT_USING_PIN
+#define RT_USING_WDT
 
 /* Using WiFi */
 
@@ -150,7 +151,17 @@
 #define PKG_USING_OTA_DOWNLOADER
 #define RT_USING_RYM
 /* system packages */
-
+#define PKG_USING_QBOOT
+#define QBOOT_APP_PART_NAME "app"
+#define QBOOT_DOWNLOAD_PART_NAME "download"
+#define QBOOT_FACTORY_PART_NAME "factory"
+// #define QBOOT_USING_QUICKLZ
+#define QBOOT_USING_SHELL
+#define QBOOT_SHELL_KEY_CHK_TMO 5
+#define QBOOT_USING_OTA_DOWNLOADER
+#define QBOOT_THREAD_STACK_SIZE 4096
+#define QBOOT_THREAD_PRIO 5
+#define PKG_USING_QBOOT_LATEST_VERSION
 
 /* peripheral libraries and drivers */
 
@@ -158,6 +169,12 @@
 /* miscellaneous packages */
 #define PKG_USING_HELLO
 
+#define PKG_USING_CRCLIB
+#define CRCLIB_USING_CRC32
+#define CRC32_USING_CONST_TABLE
+#define CRC32_POLY_EDB88320
+#define CRC32_POLY 3988292384
+#define PKG_USING_CRCLIB_V100
 
 /* samples: kernel and components samples */
 

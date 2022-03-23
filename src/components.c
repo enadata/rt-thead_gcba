@@ -212,7 +212,7 @@ void rt_application_init(void)
     tid = rt_thread_create("main", main_thread_entry, RT_NULL,
                            RT_MAIN_THREAD_STACK_SIZE, RT_MAIN_THREAD_PRIORITY, 20);
     RT_ASSERT(tid != RT_NULL);
-    rt_kprintf("main_stack :0x%08x sp:0x%08x\n",tid->stack_addr,tid->sp);
+    // rt_kprintf("main_stack :0x%08x sp:0x%08x\n",tid->stack_addr,tid->sp);
 #else
     rt_err_t result;
 
