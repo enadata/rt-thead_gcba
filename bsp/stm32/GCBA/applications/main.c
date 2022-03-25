@@ -21,16 +21,16 @@ int main(void)
     int count = 1;
     rt_kprintf("inter main func\n");
     /* set LED0 pin mode to output */
-    // rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
-    // rt_pin_write(LED0_PIN, PIN_LOW);
+    rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
+    rt_pin_write(LED0_PIN, PIN_LOW);
 
     while (count++)
     {
         hello_func();
-        // rt_pin_write(LED0_PIN, PIN_HIGH);
-        // rt_thread_mdelay(500);
-        // rt_pin_write(LED0_PIN, PIN_LOW);
+        rt_pin_write(LED0_PIN, PIN_HIGH);
         rt_thread_mdelay(500);
+        rt_pin_write(LED0_PIN, PIN_LOW);
+        rt_thread_mdelay(2000);
     }
 
     return RT_EOK;
