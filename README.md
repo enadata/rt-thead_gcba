@@ -7,3 +7,4 @@ rt-thread 4.0  test for GCBA
 - [X] ota_downloader package
 - [X] bootloader bug(跳转到app后不启动)
 - [ ] thread pool package
+- [ ] 增加网卡驱动
